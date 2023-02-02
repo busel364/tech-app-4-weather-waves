@@ -32,7 +32,6 @@ const fetchWeatherDiscription = (city: string) => {
                 }
             })
             .then(data => {
-                console.log(data);
                 dispatch(setWeatherDiscription({ description: data.weather[0].description, main: data.weather[0].main }));
                 dispatch(setSun({ sunrise: data.sys.sunrise, sunset: data.sys.sunset }));
             })
