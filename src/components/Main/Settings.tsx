@@ -18,17 +18,17 @@ const Settings = () => {
             <Switch checked={mode} className='mx-3 mb-5' onClick={() => dispatch(changeMode())} />
             <p style={{ fontWeight: 100, fontSize: '1.7rem' }}>Do you have any question? Problem with website? Chat me somewhere </p>
             <div>
-                <a href='https://t.me/busel364' target='_blank'>
+                <a href='https://t.me/busel364' target='_blank' rel="noreferrer">
                     <Icon component={TgSvg} style={{ fontSize: '9rem', color: `${mode ? 'whitesmoke' : 'black'} ` }} title='Telegram' />
                 </a>
             </div>
             <div>
-                <a href='https://www.linkedin.com/in/vladislav-busel-1565a625b/' target='_blank'>
+                <a href='https://www.linkedin.com/in/vladislav-busel-1565a625b/ ' target='_blank' rel="noreferrer">
                     <LinkedinOutlined style={{ fontSize: '9rem', color: `${mode ? 'whitesmoke' : 'black'} ` }} title='LinkedIn' target='blank' />
                 </a>
             </div>
             <div>
-                <a href='https://github.com/busel364' target='_blank'>
+                <a href='https://github.com/busel364' target='_blank' rel="noreferrer">
                     <GithubOutlined style={{ fontSize: '9rem', color: `${mode ? 'whitesmoke' : 'black'} ` }} title='GitHub' />
                 </a>
             </div>
