@@ -1,39 +1,191 @@
-.App {
-  text-align: center;
+.headerImg {
+  width: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  height: 85px;
+  display: block;
+  box-shadow: 0 3px 10px;
+  transition: top 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.headerLight{
+  background-color: white;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.headerDark {
+    background-color: #333;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.headerHidden {
+  top: -105px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.headerLinkLight {
+  color: black;
+  text-decoration: none;
+}
+
+.headerLinkDark {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.headerLinkDark:hover, .headerLinkLight:hover {
+  color: grey;
+}
+
+.mainDark {
+  background-image: url('../src/utils/imgs/noch-okean-serfing-paren.jpg');
+  /* background-image: url('https://img2.goodfon.ru/wallpaper/nbig/5/6d/noch-okean-serfing-paren.jpg'); */
+}
+
+.mainLight {
+  background-image: url('../src/utils/imgs/BaliSurfing1a.jpg');
+ /* background-image: url('https://s3-cdn.designerjourneys.com/blog/wp-content/uploads/2017/05/17175708/BaliSurfing1a.jpg'); */
+}
+
+.preMain{
+  margin: 0 auto;
+}
+
+.main {
+  /* background-image: url('../src/utils/imgs/wallpaperflare.com_wallpaper.jpg'); */
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(10px);
+  position: fixed;
+}
+
+.mainPage {
+  /* margin-top: 87px; */
+  padding-top: 18vh;
+  background-color: rgba(82, 82, 82, 0.5);
+  position: relative;
+  padding-bottom: 25vh;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+.mainPageRightSide {
+  background-color: rgba(42, 42, 42, 0.504);
+  /* height: 424px; */
+}
+
+.divMainPageRightSide {
+  position: relative;
+  top: 10%;
+}
+
+.divMainPageRightSide input {
+  font-size: 2rem;
+  background-color: inherit;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  margin: 0 auto;
+  color: whitesmoke;
+  outline: none;
+}
+
+.linkMainPage {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border: 2px solid whitesmoke;
+  background-color: #333;
+  transition: 0.5s;
+}
+
+.linkMainPage:hover {
+  transition: 0.3s;
+  border: 2px solid rgb(159, 156, 110);
+  color: rgb(159, 156, 110);
+  background-color: inherit;
+}
+
+.itemPage {
+  padding-top: 105px;
+  background-color: rgba(82, 82, 82, 0.5);
+  position: relative;
+  z-index: 5;
+}
+
+.btnItemPage {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border: 2px solid whitesmoke;
+  background-color: #333;
+  transition: 0.5s;
+}
+
+.btnItemPage:hover {
+  transition: 0.3s;
+  color: #333;
+  border: 2px solid #333;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.loader {
+  padding-top: 40vh;
+}
+
+.settings {
+  padding-top: 130px;
+  background-color: rgba(82, 82, 82, 0.5);
+  position: relative;
+  z-index: 5;
+}
+
+.contactImg {
+  width: 150px;
+}
+
+.footer{
+  height: 96px;
+  background-color: #333;
+  position: relative;
+  z-index: 5;
+}
+
+.divTable{
+  display: block;
+  overflow-x: scroll;
+}
+
+.table{
+  box-sizing: content-box;
+  overflow-x: scroll;
+}
+
+.divTable::-webkit-scrollbar {
+  width: 5px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.divTable::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  /* background-color: #f9f9fd; */
+  border-radius: 10px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.divTable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* color: inherit; */
+  /* background-color: inherit; */
+  background: linear-gradient(180deg, rgba(110, 110, 110, 0.3), rgba(65, 65, 66, 0.3));
+}
+
+.h2{
+  font-weight: 100;
 }
