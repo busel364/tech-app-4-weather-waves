@@ -7,7 +7,7 @@ const params = 'airTemperature,waterTemperature,waveDirection,waveHeight,windDir
 
 export const fetchCordinates = (city: string) => {
     return (dispatch: AppDispatch) => {
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key_openweather}`)
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key_openweather}`)
             .then(response => {
                 if (response.ok) {
                     return response.json();
