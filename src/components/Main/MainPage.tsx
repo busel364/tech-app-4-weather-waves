@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAppDispatch } from '../../app/hooks';
 import { fetchCordinates } from '../../asyncActions/fetchWeather';
-import { setState } from '../../reducers/weatherDataReducer';
 
 const MainPage = () => {
 
